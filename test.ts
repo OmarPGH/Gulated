@@ -1,3 +1,7 @@
 import { input } from './lib/index.ts';
 
-console.log(input());
+input
+	.add('--sf, --save-file', 'bool')
+	.add('-d,--depth', 'num')
+
+console.log(input);
