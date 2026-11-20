@@ -1,2 +1,2 @@
-export * from './flags.ts';
+export * from './flagsUtils.ts';
 export * from './caseConverter.ts';

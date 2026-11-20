@@ -1,10 +1,12 @@
-import { constants } from '../constants.ts';
+import { flagsType } from '../constants.ts';
 
 export function typeofFlag(flag) {
 	if (flag.startsWith('--')) {
-		return constants.longFlag;
+		return flagsType.longFlag;
 	} else if (flag.startsWith('-')) {
-		return constants.shortFlag;
+		return flagsType.shortFlag;
+	} else if (flag.startsWith('_')) {
+		return flagsType.alias;
 	}
 }
 
